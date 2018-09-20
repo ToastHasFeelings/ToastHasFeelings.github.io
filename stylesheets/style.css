@@ -1,0 +1,92 @@
+/* CSS Document */
+
+/*++++++++++++++++++++++++++++++++
+		Basic Structure
+++++++++++++++++++++++++++++++++*/
+
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+#header {
+	height: 100px;
+}
+
+#content {
+	float: right;
+	width: 600px;
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+}
+
+#footer {
+	clear: both;
+}
+
+/*++++++++++++++++++++++++++++++++
+			Color and Fonts
+		color.adobe.com
+++++++++++++++++++++++++++++++++*/
+
+body{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: royalblue;
+	background-image: url("../image/diamondblocks.png")
+	/*background-color: #9DE6FF;*/
+}
+
+#header, #sidebar, #content, #footer{
+	/*background-color: #6BE6FF;*/
+	background-color:rgba(107,230,255,0.50);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: darkblue;
+	padding-left: 4px;
+	padding-right: 4px;
+	
+}
+
+/*+++++++++++++++++++++++++++++++
+		Responsive Design
++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 980px) {
+	
+}
+@media screen and (max-width: 700px) {
+	
+}
+@media screen and (max-width: 480px) {
+	
+}
+/*Photos*/
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px) {
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
