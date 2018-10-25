@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Hangman</h1>
+	
+	<script>
+	//array of possible words
+		var words = [
+			"toast",
+			"french",
+			"baguette",
+			"sourdough",
+			"banana",
+			"brioche",
+			"pita",
+			"biscuit"
+		];
+		// pick random word
+		var word = words[Math.floor(Math.random() * words.length)];
+		
+		// answer array
+		var answerArray = [];
+		for (var i = 0; i < word.length; i++) {
+			answerArray[i] = "_";
+		}
+		
+		var remainingLetters = word.length;
+		
+		// looping game
+			// show progress
+		while (remainingLetters > 0) {
+			alert(answerArray.join(" "));
+			// get guess
+			var guess = prompt("Guess a letter, or cancel to stop playing.");
+			if (guess === null) {
+				// exit loop
+				
+				break;
+			} else if(guess.length !== 1) {
+				alert("Please enter only one letter")
+			} else {
+				// update game with guess
+				for(var j = 0; j < word.length; j++) {
+					if(word[j] === guess) {
+						answerArray[j] = guess;
+						remainingLetters--;
+						
+						}
+				}
+			}
+		}
+		// end game loop
+		
+		
+		// show answer and congragulate
+		alert(answerArray.join(" "))
+		alert("Good Job! The answer was " + word);
+	</script>
+</body>
+</html>
+|0| Plankton
+|0 0| Spongebob
+/0 0\ Patrick
+(0 0) Squidward
