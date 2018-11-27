@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.5 - Dice Roller</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var timesRolled = 0
+		var timesOne = 0
+		var timesTwo = 0
+		var timesThree = 0
+		var timesFour = 0
+		var timesFive = 0
+		var timesSix = 0
+		function dice() {
+			var x = Math.ceil(Math.random()*6);
+			return x;
+		}
+			// calculate roll
+			// multiply decimal from Math.random and Math.ceil(x) by 6 so it is a decimal to 6
+			// return result
+		while(timesRolled <= 20) {
+			var currentRoll = dice();
+			document.write(currentRoll + "<br>")
+			if (currentRoll == 1){
+				++ timesOne
+			} else if (currentRoll == 2){
+				++ timesTwo
+			} else if (currentRoll == 3){
+				++ timesThree
+			}
+			++ timesRolled
+		}
+
+		// end function
+		// end function
+		
+		
+		// call function and print return value
+	</script>
+</body>
+</html>
