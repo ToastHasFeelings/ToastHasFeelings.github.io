@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.6 - Rock, Paper, Scissors</title>
+</head>
+
+<body>
+	<img src = "../image/r-p-s-l-s.jpg">
+	<script type="text/javascript">
+	// calculate computer choice 1 is rock, 2 is paper, 3 is scissors, 4 is lizard, and 5 is spock
+	var c = Math.ceil(Math.random() * 5);
+	// ask player for their choice
+	var p = prompt("Enter in what you choose(1 is rock, 2 is paper, 3 is scissors, 4 is lizard, and 5 is spock)");
+	// call function
+		function comparePlayerAndComputer() {
+			// compare inputs
+			if (p == c) {
+				document.write("You got a tie NOOOOOOOBB")
+			} else if (p == 1 && (c != 2 || c != 5)) {
+				document.write("Ok you won. Weird flex but ok")
+			} else if (p == 2 && (c !=3 || c!= 4)) {
+				document.write("STOP HURTING THE ENVIORNMENT BY WASTING PAPER OMG STOP IT (you won btw)")
+			} else if (p == 3 && (c != 1 || c != 5)) {
+				alert("They did surgery on a grape but they can do it to you")
+			}
+
+
+
+			// print who wins
+
+
+		}
+
+
+	</script>
+</body>
+</html>

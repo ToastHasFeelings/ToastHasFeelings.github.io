@@ -7,13 +7,13 @@
 
 <body>
 	<script type="text/javascript">
-		var timesRolled = 0
-		var timesOne = 0
-		var timesTwo = 0
-		var timesThree = 0
-		var timesFour = 0
-		var timesFive = 0
-		var timesSix = 0
+		var timesRolled = 0;
+		var timesOne = 0;
+		var timesTwo = 0;
+		var timesThree = 0;
+		var timesFour = 0;
+		var timesFive = 0;
+		var timesSix = 0;
 		function dice() {
 			var x = Math.ceil(Math.random()*6);
 			return x;
@@ -21,23 +21,34 @@
 			// calculate roll
 			// multiply decimal from Math.random and Math.ceil(x) by 6 so it is a decimal to 6
 			// return result
-		while(timesRolled <= 20) {
+		while(timesRolled <= 100) {
 			var currentRoll = dice();
-			document.write(currentRoll + "<br>")
+			document.write(currentRoll + " ");
 			if (currentRoll == 1){
-				++ timesOne
+				++timesOne;
 			} else if (currentRoll == 2){
-				++ timesTwo
+				++timesTwo;
 			} else if (currentRoll == 3){
-				++ timesThree
+				++timesThree;
+			} else if (currentRoll == 4) {
+				++timesFour;
+			} else if (currentRoll == 5) {
+				++timesFive;
+			} else {
+				++timesSix;
 			}
-			++ timesRolled
+			++timesRolled;
 		}
+		document.write("<br>" + "Times one was rolled: " + timesOne);
+		document.write("<br>" + "Times two was rolled: " + timesTwo);
+		document.write("<br>" + "Times three was rolled: " + timesThree);
+		document.write("<br>" + "Times four was rolled: " + timesFour);
+		document.write("<br>" + "Times five was rolled: " + timesFive);
+		document.write("<br>" + "Times six was rolled: " + timesSix);
+		// end function
+		// end function
 
-		// end function
-		// end function
-		
-		
+
 		// call function and print return value
 	</script>
 </body>
